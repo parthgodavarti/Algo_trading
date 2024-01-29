@@ -13,8 +13,8 @@ import os
 
 def sendMessage(message_text):
     try:
-        bot = telebot.TeleBot('6740862424:AAHuD2WYeyuUzgTu6P9A_rdx4r98i47re5I')
-        chat_id =5772710331
+        bot = telebot.TeleBot(BOT Details)
+        chat_id =Your chat ID
         bot.send_message(chat_id, message_text)
     except telebot.apihelper.ApiTelegramException as e:
         print(f"Failed to send message: {e.description}")
@@ -140,11 +140,11 @@ def is_indian_trading_day(date):
   return True
 
 def login():
-    api_key = '39Lpvhj9'
-    Secret='b1e738c2-7680-417d-b388-5405b1f9da44'
-    clientId = 'P53117244'
-    pwd = '2809'
-    token = "BFCESVXAICNAQCVPE3DGIJGARU"
+    api_key = ''
+    Secret=''
+    clientId = ''
+    pwd = ''
+    token = ""
     totp=pyotp.TOTP(token).now()
     smartApi = SmartConnect(api_key)
     # login api call
